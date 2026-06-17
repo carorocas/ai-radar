@@ -1,0 +1,73 @@
+{
+  "contract_version": "ai-radar-daily-signals/v1",
+  "date": "2026-06-10",
+  "query": "buscar noticias recientes de IA y guardarlas como senales estructuradas de AI Radar",
+  "generated_at": "2026-06-10T07:45:00-05:00",
+  "signals": [
+    {
+      "id": "openai-ipo-filing-2026",
+      "title": "OpenAI avanza hacia una salida a bolsa",
+      "source": {
+        "name": "The Times",
+        "url": "https://www.thetimes.com/us/news-today/article/openai-go-public-as-ai-largest-ipo-6fxjmlbrx",
+        "published_at": "2026-06-10"
+      },
+      "evidence": "OpenAI presento documentacion ante la SEC para una futura salida a bolsa, en medio de una competencia por capital con Anthropic y SpaceX.",
+      "impact": "Alto: si OpenAI llega al mercado publico, cambiara el acceso a capital, la presion por ingresos y la transparencia financiera de laboratorios frontier.",
+      "action": "Vigilar fecha, valoracion, estructura de gobierno y como el mercado compara a OpenAI con Anthropic y SpaceX.",
+      "status": "vigilar"
+    },
+    {
+      "id": "spacex-google-compute-deal",
+      "title": "Google firma un acuerdo masivo de computo con SpaceX",
+      "source": {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/",
+        "published_at": "2026-06-05"
+      },
+      "evidence": "Google pagara a SpaceX 920 millones de dolares mensuales desde octubre de 2026 hasta junio de 2029 por acceso a capacidad de computo con GPUs Nvidia y otros componentes.",
+      "impact": "Muy alto: refuerza que la ventaja competitiva en IA depende de capacidad de computo asegurada por contratos multianuales.",
+      "action": "Monitorear si esta capacidad reduce cuellos de botella de Google y si SpaceX se consolida como proveedor de infraestructura de IA.",
+      "status": "vigilar_infraestructura"
+    },
+    {
+      "id": "trump-us-military-ai-directive",
+      "title": "Estados Unidos acelera la adopcion militar de IA",
+      "source": {
+        "name": "AP News",
+        "url": "https://apnews.com/article/artificial-intelligence-ai-military-trump-weapons-1078e23edada2bc16db12dba109015c0",
+        "published_at": "2026-06-05"
+      },
+      "evidence": "La Casa Blanca emitio un memorando para acelerar el uso de IA en defensa y seguridad nacional, con menciones a supervision humana, libertades civiles y sistemas autonomos.",
+      "impact": "Muy alto: aumenta la presion sobre proveedores de IA para definir limites en vigilancia, armas autonomas y contratos gubernamentales.",
+      "action": "Registrar como senal de riesgo; seguir cambios en politicas de uso, contratos con laboratorios y respuestas regulatorias.",
+      "status": "riesgo_alto"
+    },
+    {
+      "id": "anthropic-coordinated-ai-pause",
+      "title": "Anthropic propone coordinar pausas ante riesgos de IA avanzada",
+      "source": {
+        "name": "AP News",
+        "url": "https://apnews.com/article/anthropic-artificial-intelligence-ai-938c99158e5953601cf3322f1cec12af",
+        "published_at": "2026-06-06"
+      },
+      "evidence": "Anthropic propuso que los principales laboratorios de IA coordinen una forma de pausar el desarrollo de sistemas avanzados si se vuelven demasiado peligrosos.",
+      "impact": "Alto: senala que los laboratorios frontier empiezan a discutir mecanismos operativos de pausa, no solo principios generales de seguridad.",
+      "action": "Vigilar si otros laboratorios aceptan el marco, que criterios de riesgo proponen y si hay verificacion externa.",
+      "status": "vigilar"
+    },
+    {
+      "id": "apple-siri-ai-wwdc-2026",
+      "title": "Apple relanza Siri con nuevas funciones de IA",
+      "source": {
+        "name": "AP News",
+        "url": "https://apnews.com/article/aa25d07c06d366ec5b62643a1f5b0db9",
+        "published_at": "2026-06-06"
+      },
+      "evidence": "Apple presento avances de IA para Siri en WWDC 2026, incluyendo inteligencia visual, integracion entre dispositivos y procesamiento con foco en privacidad.",
+      "impact": "Alto: Apple puede llevar funciones de IA a una base masiva de usuarios, aunque sigue compitiendo desde atras frente a Google, OpenAI y Microsoft.",
+      "action": "Probar cuando este disponible; comparar latencia, privacidad real, soporte por pais y profundidad de integracion con apps.",
+      "status": "probar_pronto"
+    }
+  ]
+}

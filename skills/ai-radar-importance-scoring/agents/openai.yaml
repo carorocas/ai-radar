@@ -1,0 +1,3 @@
+display_name: AI Radar Importance Scoring
+short_description: Puntua importancia de noticias de IA.
+default_prompt: Puntua estas senales de AI Radar por importancia usando fuente, autor y trafico.

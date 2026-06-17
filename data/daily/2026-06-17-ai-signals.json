@@ -1,0 +1,112 @@
+{
+  "contract_version": "ai-radar-daily-signals/v1",
+  "date": "2026-06-17",
+  "query": "busca las ultimas noticias de AI en paralelo usando fuentes de Notion, incluyendo MIT Technology Review AI",
+  "generated_at": "2026-06-17T07:20:00-05:00",
+  "signals": [
+    {
+      "id": "openai-news-2026-06-16-deployment-simulation",
+      "title": "OpenAI presenta Deployment Simulation para evaluar modelos antes del lanzamiento",
+      "source": {
+        "name": "OpenAI News",
+        "url": "https://openai.com/index/deployment-simulation/",
+        "published_at": "2026-06-16"
+      },
+      "evidence": "OpenAI presenta Deployment Simulation para estimar conductas no deseadas antes del lanzamiento usando contextos realistas y conversaciones desidentificadas.",
+      "impact": "Alto: mejora evaluacion de riesgo predespliegue y puede influir en practicas de seguridad para modelos frontier y agentes con herramientas.",
+      "action": "Monitorear adopcion del metodo, paper asociado y referencias en system cards o evaluaciones externas.",
+      "status": "riesgo_alto"
+    },
+    {
+      "id": "openai-news-2026-06-14-partner-network",
+      "title": "OpenAI anuncia Partner Network para despliegues empresariales",
+      "source": {
+        "name": "OpenAI News",
+        "url": "https://openai.com/index/introducing-openai-partner-network/",
+        "published_at": "2026-06-14"
+      },
+      "evidence": "OpenAI anuncia una red global de partners para crear, vender y desplegar soluciones de IA, con inversion y consultores certificados.",
+      "impact": "Medio-alto: acelera adopcion empresarial de IA, especialmente integracion, consultoria, agentes, Codex y transformacion operacional.",
+      "action": "Seguir partners, especializaciones y casos de despliegue empresarial relevantes.",
+      "status": "vigilar"
+    },
+    {
+      "id": "repo-tecnico-github-trending-ai-opencode-2026-06-17",
+      "title": "opencode gana traccion como agente de coding open source",
+      "source": {
+        "name": "OSSInsight GitHub Trending AI",
+        "url": "https://ossinsight.io/trending/ai",
+        "published_at": "2026-06-17"
+      },
+      "evidence": "OSSInsight reporta anomalyco/opencode como top mover 28d con crecimiento de estrellas y release reciente v1.17.7.",
+      "impact": "Alto: senal de adopcion en agentes de programacion y alternativas open source para flujos locales/CLI.",
+      "action": "Evaluar capacidades, licencia, instalacion Windows y riesgos de ejecucion local antes de recomendarlo.",
+      "status": "probar_pronto"
+    },
+    {
+      "id": "repo-tecnico-github-trending-ai-codex-2026-06-17",
+      "title": "OpenAI Codex mantiene crecimiento como coding agent de terminal",
+      "source": {
+        "name": "OSSInsight GitHub Trending AI",
+        "url": "https://ossinsight.io/trending/ai",
+        "published_at": "2026-06-17"
+      },
+      "evidence": "OSSInsight reporta openai/codex entre top movers 28d y release reciente 0.140.0 del 2026-06-15.",
+      "impact": "Alto: refuerza la tendencia de agentes de desarrollo integrados al flujo local.",
+      "action": "Monitorear cambios de version, requisitos de plan/API y politicas de uso para evitar costos no deseados.",
+      "status": "vigilar"
+    },
+    {
+      "id": "hn-48567759-glm-5-2-open-weights",
+      "title": "GLM-5.2 aparece como lider open weights en Artificial Analysis",
+      "source": {
+        "name": "Hacker News AI",
+        "url": "https://news.ycombinator.com/item?id=48567759",
+        "published_at": "2026-06-17T09:12:00Z"
+      },
+      "evidence": "Hacker News registra 224 puntos y 102 comentarios; la fuente enlazada reporta GLM-5.2 como lider open weights, pero requiere validacion externa.",
+      "impact": "Medio-alto: podria cambiar shortlist de modelos open-weight para coding y agentes por costo-rendimiento.",
+      "action": "Verificar pesos, licencia, costos reales, benchmarks independientes y pruebas internas antes de adoptar.",
+      "status": "esperar_para_probar"
+    },
+    {
+      "id": "hn-48562749-general-llms-clinical-ai",
+      "title": "LLMs generales superan herramientas clinicas especializadas en estudio",
+      "source": {
+        "name": "Hacker News AI",
+        "url": "https://news.ycombinator.com/item?id=48562749",
+        "published_at": "2026-06-16T22:00:17Z"
+      },
+      "evidence": "Hacker News muestra senal comunitaria debil, pero la fuente enlazada es un articulo open access en Nature Medicine publicado el 2026-06-12.",
+      "impact": "Alto: relevante para evaluacion y procurement de IA clinica, aunque no implica uso clinico sin validacion local.",
+      "action": "Usar como evidencia para investigacion; no convertir en recomendacion clinica sin validacion local y seguridad.",
+      "status": "riesgo_alto"
+    },
+    {
+      "id": "mittr-2026-06-16-ai-data-center-flex",
+      "title": "MIT Technology Review analiza data centers de IA flexibles",
+      "source": {
+        "name": "MIT Technology Review AI",
+        "url": "https://www.technologyreview.com/2026/06/16/1138591/data-center-online-quickly-electric-grid-flex/",
+        "published_at": "2026-06-16T09:00:00Z"
+      },
+      "evidence": "MIT Technology Review AI analiza centros de datos de IA flexibles, Nvidia, Digital Realty, Emerald AI y restricciones de red electrica.",
+      "impact": "Alto: conecta crecimiento de IA, infraestructura energetica, regulacion local y costos operativos de data centers.",
+      "action": "Priorizar como senal de infraestructura/energia y extraer implicaciones para costos, permisos y despliegue de IA.",
+      "status": "vigilar_infraestructura"
+    },
+    {
+      "id": "ap-2026-06-16-nvidia-huang-social-norms",
+      "title": "Jensen Huang dice que la IA requiere nuevas normas sociales",
+      "source": {
+        "name": "AP News AI",
+        "url": "https://apnews.com/article/nvidea-huang-artificial-intelligence-8334abcbc6ed8d3d7889b640ec6fa05b",
+        "published_at": "2026-06-16T20:06:00Z"
+      },
+      "evidence": "AP publica entrevista con Jensen Huang sobre adopcion social de IA, oportunidades laborales y cambio de normas sociales.",
+      "impact": "Medio-alto: senal sobre narrativa publica de Nvidia y efectos laborales/manufactura de la IA.",
+      "action": "Cruzar con noticias de chips, manufactura y empleo para evaluar impacto real.",
+      "status": "vigilar"
+    }
+  ]
+}

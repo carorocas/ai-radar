@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Radar</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='13' fill='none' stroke='%2360a5fa' stroke-width='3'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%2360a5fa'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#signalsTable">Saltar al ranking</a>
+    <main class="app-shell">
+      <header class="topbar" aria-label="Controles de AI Radar">
+        <div class="brand" aria-label="AI Radar">
+          <div class="brand-mark" aria-hidden="true">◎</div>
+          <div>
+            <h1>AI Radar</h1>
+            <p>Senales de noticias de IA</p>
+          </div>
+        </div>
+
+        <details class="control-panel" id="controlPanel" open>
+          <summary>
+            <span>Filtros y acciones</span>
+            <span class="summary-count" id="summaryCount">0 senales</span>
+          </summary>
+
+          <div class="control-body">
+            <div class="mode-switch" role="group" aria-label="Modo de visualizacion">
+              <button class="mode-button is-active" type="button" data-mode="reader" aria-pressed="true">
+                <span aria-hidden="true">▣</span>
+                Modo lector
+              </button>
+              <button class="mode-button" type="button" data-mode="operator" aria-pressed="false">
+                <span aria-hidden="true">⌁</span>
+                Modo operador
+              </button>
+            </div>
+
+            <form class="filters" id="filtersForm" aria-label="Filtros de senales">
+              <label class="field search-field" for="searchInput">
+                <span>Buscar senales</span>
+                <input id="searchInput" name="search" type="search" placeholder="Buscar senales" autocomplete="off">
+              </label>
+
+              <label class="field" for="dateFilter">
+                <span>Fecha</span>
+                <select id="dateFilter" name="date"></select>
+              </label>
+
+              <label class="field" for="sourceFilter">
+                <span>Fuente</span>
+                <select id="sourceFilter" name="source">
+                  <option value="all">Todas</option>
+                </select>
+              </label>
+
+              <label class="field" for="statusFilter">
+                <span>Estado</span>
+                <select id="statusFilter" name="status">
+                  <option value="all">Todos</option>
+                </select>
+              </label>
+            </form>
+
+            <div class="actions" aria-label="Acciones">
+              <button class="ghost-button" id="validateButton" type="button">Validar</button>
+              <button class="primary-button" id="saveButton" type="button">Guardar corrida</button>
+            </div>
+          </div>
+        </details>
+      </header>
+
+      <section class="state-banner" id="stateBanner" aria-live="polite">
+        <span class="state-dot is-loading" aria-hidden="true"></span>
+        <span id="stateMessage">Cargando senales desde JSON snapshot...</span>
+      </section>
+
+      <section class="metrics" aria-label="Resumen de senales">
+        <article class="metric">
+          <span class="metric-icon signal-icon" aria-hidden="true">⌁</span>
+          <div>
+            <strong id="signalsMetric">0</strong>
+            <span>senales</span>
+            <small>en este periodo</small>
+          </div>
+        </article>
+        <article class="metric">
+          <span class="metric-icon source-icon" aria-hidden="true">⌘</span>
+          <div>
+            <strong id="sourcesMetric">0</strong>
+            <span>fuentes activas</span>
+            <small id="sourcesMode">JSON snapshot</small>
+          </div>
+        </article>
+        <article class="metric">
+          <span class="metric-icon sqlite-icon" aria-hidden="true">◉</span>
+          <div>
+            <strong>SQLite local</strong>
+            <span class="ok-pill">OK</span>
+            <small>Persistencia disponible por CLI</small>
+          </div>
+        </article>
+        <article class="metric">
+          <span class="metric-icon json-icon" aria-hidden="true">▤</span>
+          <div>
+            <strong>JSON snapshots</strong>
+            <span class="ok-pill">OK</span>
+            <small id="snapshotMetric">Esperando datos</small>
+          </div>
+        </article>
+      </section>
+
+      <section class="ranking">
+        <div class="section-heading">
+          <div>
+            <h2>Ranking de senales</h2>
+            <p id="resultCount">0 senales encontradas</p>
+          </div>
+          <div class="table-tools" aria-label="Opciones del ranking">
+            <label for="sortFilter">Orden</label>
+            <select id="sortFilter">
+              <option value="status">Prioridad operativa</option>
+              <option value="newest">Mas recientes</option>
+              <option value="title">Titulo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="table-wrap" id="signalsTable" tabindex="0">
+          <table>
+            <caption class="sr-only">Ranking de senales AI Radar</caption>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Score</th>
+                <th scope="col">Senal</th>
+                <th scope="col">Fuente</th>
+                <th scope="col">Evidencia</th>
+                <th scope="col">Impacto</th>
+                <th scope="col">Accion</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody id="signalsBody"></tbody>
+          </table>
+        </div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <strong>No hay senales para esos filtros.</strong>
+          <span>Ajusta busqueda, fuente, fecha o estado.</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

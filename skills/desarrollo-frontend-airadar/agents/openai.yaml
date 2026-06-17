@@ -1,0 +1,3 @@
+display_name: Desarrollo Frontend AI Radar
+short_description: Frontend AI Radar verificable.
+default_prompt: Construye o valida el frontend de AI Radar con datos reales o fixtures declarados, estados completos, accesibilidad, responsive, consola limpia y capturas.

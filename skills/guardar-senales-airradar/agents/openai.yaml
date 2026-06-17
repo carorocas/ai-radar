@@ -1,0 +1,3 @@
+display_name: Guardar Senales AI Radar
+short_description: Persiste senales en JSON y SQLite.
+default_prompt: Valida y guarda senales de AI Radar en SQLite local usando snapshots JSON.
