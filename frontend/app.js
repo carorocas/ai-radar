@@ -1,4 +1,4 @@
-const SNAPSHOT_PATH = "../data/daily/2026-06-10-ai-signals.json";
+const SNAPSHOT_PATH = "../data/daily/2026-06-17-ai-signals.json";
 const SOURCES_PATH = "../config/sources.json";
 
 const state = {
@@ -309,7 +309,7 @@ els.validateButton.addEventListener("click", () => {
 });
 
 els.saveButton.addEventListener("click", () => {
-  setBanner("success", "Guardado disponible por CLI: python codex\\scripts\\save_signals.py --input codex\\data\\daily\\2026-06-10-ai-signals.json");
+  setBanner("success", "Guardado disponible por CLI: python scripts\\save_signals.py --input data\\daily\\2026-06-17-ai-signals.json");
 });
 
 window.addEventListener("resize", syncControlPanel);
