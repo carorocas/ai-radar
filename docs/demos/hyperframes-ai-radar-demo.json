@@ -1,0 +1,95 @@
+{
+  "title": "AI Radar - primera demo visual",
+  "date": "2026-06-17",
+  "duration_seconds": 72,
+  "format": "16:9",
+  "style": {
+    "theme": "dark",
+    "tone": "technical",
+    "motion": "subtle zooms, clean product transitions",
+    "palette": "dark neutral with cyan and green status accents"
+  },
+  "deployment_url": "https://ai-radar-rlljqomx4-seifer121-9965s-projects.vercel.app/",
+  "assets": [
+    {
+      "type": "screenshot",
+      "path": "frontend/ai-radar-desktop-dark.png",
+      "usage": "desktop dashboard overview"
+    },
+    {
+      "type": "screenshot",
+      "path": "frontend/ai-radar-mobile-dark.png",
+      "usage": "responsive mobile proof"
+    },
+    {
+      "type": "json",
+      "path": "data/daily/2026-06-17-ai-signals.json",
+      "usage": "daily AI Radar signals snapshot"
+    },
+    {
+      "type": "schema",
+      "path": "contracts/ai-radar-daily-signals.schema.json",
+      "usage": "data contract"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "problem",
+      "duration_seconds": 7,
+      "visual": "Dark background with AI Radar dashboard screenshot slightly zoomed.",
+      "on_screen_text": "Demasiadas noticias de IA. Pocas senales accionables.",
+      "voiceover": "AI Radar ayuda a separar ruido de senales utiles en inteligencia artificial."
+    },
+    {
+      "id": "what-it-does",
+      "duration_seconds": 9,
+      "visual": "Zoom into metrics and ranking.",
+      "on_screen_text": "Noticias recientes -> senales estructuradas",
+      "voiceover": "Cada busqueda se transforma en un conjunto diario de senales con fuente, evidencia, impacto, accion y estado."
+    },
+    {
+      "id": "frontend",
+      "duration_seconds": 10,
+      "visual": "Desktop dark screenshot with overlays around filters, ranking, reader mode, operator mode.",
+      "on_screen_text": "Dashboard tecnico: ranking, filtros y modos de trabajo",
+      "voiceover": "El frontend muestra un ranking tecnico con filtros por fecha, fuente y estado."
+    },
+    {
+      "id": "data",
+      "duration_seconds": 10,
+      "visual": "Split screen: dashboard and JSON snapshot.",
+      "on_screen_text": "Snapshot diario: 2026-06-17",
+      "voiceover": "La pagina consume un snapshot JSON versionado con siete senales generadas desde busqueda paralela."
+    },
+    {
+      "id": "evidence",
+      "duration_seconds": 13,
+      "visual": "Source cards: AP News, OpenAI News, The Verge, GitHub, Hacker News.",
+      "on_screen_text": "Respaldado por fuentes verificables",
+      "voiceover": "Cada senal conserva su fuente original y se puede revisar contra evidencia real."
+    },
+    {
+      "id": "persistence",
+      "duration_seconds": 12,
+      "visual": "Flow diagram: Busqueda paralela -> JSON -> SQLite local -> GitHub -> Vercel.",
+      "on_screen_text": "Persistencia local + snapshots versionados + Vercel",
+      "voiceover": "Las senales se validan contra contrato, se guardan en SQLite local y se publican como snapshots versionados."
+    },
+    {
+      "id": "close",
+      "duration_seconds": 8,
+      "visual": "Full dashboard view with top ranked signals visible.",
+      "on_screen_text": "AI Radar: decidir que vigilar, probar o escalar",
+      "voiceover": "El resultado es un radar operativo con evidencia, impacto y acciones concretas."
+    }
+  ],
+  "evidence_sources": [
+    "https://apnews.com/article/7d783c6de4356962e338b8b8563d48ea",
+    "https://apnews.com/article/0a87a0f7773255419936af053ad8bdef",
+    "https://apnews.com/article/afeb5279eef406980dffa46ff91495e0",
+    "https://openai.com/news/",
+    "https://www.theverge.com/tech/944569/google-follows-anthropic-in-signing-a-compute-deal-with-spacex",
+    "https://github.com/GetStream/awesome-ai-news",
+    "https://news.ycombinator.com/item?id=48446893"
+  ]
+}
